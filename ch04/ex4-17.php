@@ -1,0 +1,12 @@
+// 예제 4-17 배열 원소 중 특정 값 찾기
+
+$meals = array('Walnut Bun' => 1,
+               'Cashew Nuts and White Mushrooms' => 4.95,
+               'Dried Mulberries' => 3.00,
+               'Eggplant with Chili Sauce' => 6.50,
+               'Shrimp Puffs' => 0);
+
+$dish = array_search(6.50, $meals);
+if ($dish) {
+    print "$dish 메뉴의 가격은 \$6.50입니다.";
+}
